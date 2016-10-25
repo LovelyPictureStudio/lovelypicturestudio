@@ -1,0 +1,82 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section .portrait {
+    width: 90%;
+    text-align: center;
+}
+
+section .portrait div {
+    display: inline-block;
+    text-align: center;
+    border: 15px solid #fff1d8;
+    border-bottom: 60px solid #fff1d8;
+    position: relative
+}
+
+section .portrait div:first-child {
+    margin-right: 10px;
+}
+
+section .portrait span {
+    font-size: 1.5vw;
+    font-weight: bold;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+}
+
+section .portrait .portrait-one {
+    width: 45%;
+    height: 500px;
+    background-image: url('../gallery/hands.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section .portrait .portrait-two {
+    width: 45%;
+    height: 500px;
+    background-image: url('../gallery/holding.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 998px) {
+    section .portrait div {
+        display: block;
+    }
+    
+    section .portrait .portrait-one {
+        width: 100%;
+    }
+    
+    section .portrait .portrait-two {
+        width: 100%;
+    }
+    
+    section .portrait div:first-child {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section .portrait .portrait-one {
+        height: 400px;
+    }
+    
+    section .portrait .portrait-two {
+        height: 400px;
+    }
+    
+    section .portrait span {
+        bottom: -50px;   
+    }
+}

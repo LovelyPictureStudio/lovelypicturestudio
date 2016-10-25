@@ -1,0 +1,123 @@
+section .contact-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+section .contact-container > div {
+    border: 15px solid #fff1d8;
+    background-color: #fff1d8;
+}
+
+section .contact-container .left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+section .contact-container .left-container h2 {
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+section .contact-container .left-container h2 > b {
+    font-size: 15px;   
+}
+
+section .contact-container .center-container {
+    margin-right: 30px;
+}
+
+label {
+    font-size: 1vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.form-control {
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 0 !important;
+}
+
+.btn-lovely {
+    width: 100%;
+    font-size: 12px;
+    /*font-weight: bold;*/
+    background-color: black;
+    color: white;
+}
+
+.btn-lovely:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.btn-lovely:focus {
+    color: white;
+}
+
+.special-btn {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 998px) {
+    section .contact-container {
+        flex-direction: column;
+    }
+    
+    section .contact-container .left-container {
+        margin-right: 0;
+    }
+    
+    section .contact-container .center-container {
+        margin-right: 0;
+    }
+    
+    section .contact-container .left-container h2 {
+        font-size: 15px;
+    }
+    
+    label {
+        font-size: 2vw;
+    }
+    
+    .form-control {
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    label {
+        font-size: 3vw;
+    }
+    
+    .form-control {
+        font-size: 2.5vw;
+    }
+    
+    section .contact-container .left-container h2 {
+        font-size: 12px;
+    }
+    
+    .btn-lovely {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    label {
+        font-size: 4vw;
+    }
+    
+    .form-control {
+        font-size: 3.5vw;
+    }
+}

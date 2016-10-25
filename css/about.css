@@ -1,0 +1,71 @@
+section .about-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    background-color: #fff1d8;
+    border: 20px solid #fff1d8;
+}
+
+section .parent {
+    display: flex;
+    flex-direction: column;
+}
+
+section .about-container .about-img {
+    background-image: url('../images/about.jpg');
+    width: 500px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section .about-container h2 {
+    line-height: 1;
+    font-family: 'SkyLine';
+    margin-left: 20px;
+    font-size: 2.5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+section .about-container h2 > a {
+    text-decoration: none;
+}
+@media screen and (max-width: 998px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    section .about-container h2 {
+        display: inline-table;
+    }
+}
+
+@media screen and (max-width: 998px) {
+    section .about-container {
+        flex-direction: column;
+    }
+    
+    section .about-container .about-img {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+    
+    section .about-container h2 {
+        line-height: 1.2;
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section .about-container h2 {
+        line-height: 1;
+        font-size: 8vw;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    section .about-container .about-img {
+        height: 200px;
+    }
+}
