@@ -7,6 +7,7 @@ section .contact-container {
 section .contact-container > div {
     border: 15px solid #fff1d8;
     background-color: #fff1d8;
+    font-family: 'MoonFlower';
 }
 
 section .contact-container .left-container {

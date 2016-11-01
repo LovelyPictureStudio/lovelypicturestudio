@@ -8,6 +8,7 @@ section {
 section .portrait {
     width: 90%;
     text-align: center;
+    font-family: 'courier';
 }
 
 section .portrait div {
@@ -23,7 +24,7 @@ section .portrait div:first-child {
 }
 
 section .portrait span {
-    font-size: 1.5vw;
+    font-size: 3vw;
     font-weight: bold;
     position: absolute;
     bottom: -50px;

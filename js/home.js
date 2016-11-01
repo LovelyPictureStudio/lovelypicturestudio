@@ -1,11 +1,11 @@
 setInterval(function() {
-    var size_pulsation = 1.5;
+    var size_pulsation = 3;
     if (window.innerWidth > 786 && window.innerWidth <= 998) {
-        size_pulsation = 2;
+        size_pulsation = 3.5;
     } else if (window.innerWidth > 568 && window.innerWidth <= 768) {
-        size_pulsation = 3;
+        size_pulsation = 4.5;
     } else if (window.innerWidth <= 568) {
-        size_pulsation = 5;
+        size_pulsation = 5.5;
     }
     $('.portrait span').animate({
         'font-size': (size_pulsation + 0.5) + 'vw'

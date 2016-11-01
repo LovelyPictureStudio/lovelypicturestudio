@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $('header nav a, header .logo').on('click', function() {
+    $('header nav a').on('click', function() {
         $('header nav a').each(function() {
             $(this).removeClass('selected');
         });
         $(this).addClass('selected');
-        load_section($(this).text().trim().toLowerCase());
+        load_section($(this).attr('data-section'));
     });
 });
 
