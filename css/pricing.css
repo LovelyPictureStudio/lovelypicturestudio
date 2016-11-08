@@ -1,0 +1,26 @@
+div.price_card {
+	border: 2px dotted black;
+	font-family: courier;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+div.price_card .header {
+	font-weight: bold;
+	margin: 0 5px;
+}
+
+div.price_card .header span.italics{
+	font-style: italic;
+	font-weight: normal;
+}
+
+div.price_card .price {
+	color: #E93C3C;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+div.price_card .disclaimer {
+	font-size: 8px;
+}

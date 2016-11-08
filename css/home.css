@@ -24,10 +24,10 @@ section .portrait div:first-child {
 }
 
 section .portrait span {
-    font-size: 3vw;
+    font-size: 1.5vw;
     font-weight: bold;
     position: absolute;
-    bottom: -50px;
+    bottom: -62px;
     left: 0;
     right: 0;
 }
@@ -66,6 +66,11 @@ section .portrait .portrait-two {
     section .portrait div:first-child {
         margin-bottom: 20px;
     }
+    
+    section .portrait span {
+        bottom: -50px;
+        font-size: 3vw;
+    }    
 }
 
 @media screen and (max-width: 768px) {
@@ -78,6 +83,7 @@ section .portrait .portrait-two {
     }
     
     section .portrait span {
-        bottom: -50px;   
+        bottom: -50px;
+        font-size: 3vw;        
     }
 }
