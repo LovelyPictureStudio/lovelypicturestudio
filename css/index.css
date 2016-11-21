@@ -95,7 +95,9 @@ footer span {
     font-size: 1vw;
 }
 
-.default-font {
+.default-font,
+.default-font label,
+.default-font h2 {
     font-family: courier;
 }
 
