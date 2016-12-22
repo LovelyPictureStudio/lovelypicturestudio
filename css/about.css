@@ -1,11 +1,26 @@
+section .about-container.parent {
+    width: 95%;
+}
+
 section .about-container {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    width: 80%;
+    width: 95%;
     background-color: #fff1d8;
     border: 20px solid #fff1d8;
+}
+
+section .text-container {
+    max-width: 1000px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+section .divider {
+    width: 100%;
+    overflow: hidden;
 }
 
 section .parent {
@@ -13,10 +28,16 @@ section .parent {
     flex-direction: column;
 }
 
-section .about-container .about-img {
+section .img-container {
+    width: 100%;
+    margin-bottom: 0;
+    max-width: 1000px;
+}
+
+section .img-container .about-img {
     background-image: url('../images/about.jpg');
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    height: 550px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -24,11 +45,9 @@ section .about-container .about-img {
 
 section .about-container h2 {
     line-height: 1;
-    font-family: 'SkyLine';
-    margin-left: 20px;
+    font-family: courier;
     font-size: 2.5vw;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 section .about-container h2 > a {
@@ -45,27 +64,28 @@ section .about-container h2 > a {
         flex-direction: column;
     }
     
-    section .about-container .about-img {
+    section .img-container .about-img {
         width: 100%;
-        height: 400px;
+        height: 450px;
         margin-bottom: 20px;
-    }
-    
-    section .about-container h2 {
-        line-height: 1.2;
-        font-size: 5vw;
     }
 }
 
 @media screen and (max-width: 768px) {
     section .about-container h2 {
         line-height: 1;
-        font-size: 8vw;
+        font-size: 5vw;
     }
 }
 
 @media screen and (max-width: 468px) {
-    section .about-container .about-img {
+    section .img-container .about-img {
         height: 200px;
+        margin-bottom: 0;
+    }
+
+    section .about-container h2 {
+        line-height: 1.2;
+        font-size: 4.5vw;
     }
 }
