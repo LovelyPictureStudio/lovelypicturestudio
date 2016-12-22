@@ -1,15 +1,20 @@
 {
   "name": "lovelypicturestudio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Anabel's company website",
   "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "Hernando Torres-Rocca",
   "license": "ISC",
   "scripts": {
-    "prestart": "npm install",
-    "start": "http-server -a 0.0.0.0 -p 8002"
+    "test": "echo \"Error: no test specified\" && exit 1"
+    , "prestart": "npm install"
+    , "start": "cd dist && http-server -a 0.0.0.0 -p 8002"
+    , "clean" : "rm -fr dist/* && mkdir -p dist/js && mkdir -p dist/images && mkdir -p dist/gallery && mkdir -p dist/css"
+    , "html" : "cp *.html dist/"
+    , "js" : "cp js/*.js dist/js"
+    , "pics" : "cp images/*.png dist/images && cp images/*.jpg dist/images && cp gallery/*.jpg dist/gallery"
+    , "css" : "cp css/*.css dist/css"
+    , "build" : "npm run clean && npm run html && npm run js && npm run pics && npm run css"
+    , "pack" : "rm -fr lovelypicturestudio.zip && cd dist && zip -r ../lovelypicturestudio.zip *"
   }
 }

@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Moon Flower Bold';
+    src: url('Moon Flower Bold.eot'); /* IE9 */
+    src: url('Moon Flower Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('Moon Flower Bold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'MoonFlower';
     src: url('MoonFlower.eot'); /* IE9 */
     src: url('MoonFlower.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -10,8 +17,4 @@
     src: url('SmallTownSkyline.eot'); /* IE9 */
     src: url('SmallTownSkyline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('SmallTownSkyline.ttf') format('truetype');
-}
-
-html, body {
-    font-family: 'MoonFlower' !important;
 }

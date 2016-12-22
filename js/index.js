@@ -1,10 +1,10 @@
 $(document).ready(function() {
-    $('header nav a, header .logo').on('click', function() {
+    $('header nav a').on('click', function() {
         $('header nav a').each(function() {
             $(this).removeClass('selected');
         });
         $(this).addClass('selected');
-        load_section($(this).text().trim().toLowerCase());
+        load_section($(this).attr('data-section'));
     });
 });
 
@@ -17,15 +17,25 @@ function go_home() {
 };
 
 function load_section(section) {
+    var sectionLabel = 'home';
     if (section.includes('home')) {
-            $('section').load('home.html', function() { set_storage('menu-category', 'home'); });
-    } else if (section.includes('work' || 'proyectos')) {
-            $('section').load('work.html', function() { set_storage('menu-category', 'work'); });
-    } else if (section.includes('about' || 'sobre mi')) {
-            $('section').load('about.html', function() { set_storage('menu-category', 'about'); });
-    } else if (section.includes('contact' || 'contacta')) {
-            $('section').load('contact.html', function() { set_storage('menu-category', 'contact'); });
+        sectionLabel = 'home';
+    } 
+    else if (section.includes('work' || 'proyectos')) {
+        sectionLabel = 'work';
+    } 
+    else if (section.includes('about' || 'sobre mi')) {
+        sectionLabel = 'about';
+    } 
+    else if (section.includes('contact' || 'contacta')) {
+        sectionLabel = 'contact';            
     }
+    else if (section.includes('pricing' || 'contacta')) {
+        sectionLabel = 'pricing';
+    }
+
+    $('section').load(sectionLabel + '.html', function() { set_storage('menu-category', sectionLabel); });
+
     set_storage('location', section);
 };
 

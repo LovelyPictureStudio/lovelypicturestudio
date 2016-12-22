@@ -17,9 +17,14 @@ header .logo {
 }
 
 header h1 {
-    font-size: 2.5vw;
+    font-size: 8vw;
     margin: 15px;
     font-weight: bold;
+    font-family: 'Moon Flower Bold'
+}
+
+header h2 { 
+    font-family: 'courier';
 }
 
 header .social-container {
@@ -90,9 +95,15 @@ footer span {
     font-size: 1vw;
 }
 
+.default-font,
+.default-font label,
+.default-font h2 {
+    font-family: courier;
+}
+
 @media screen and (max-width: 998px) {
     header h1 {
-        font-size: 3.5vw;
+        font-size: 8vw;
     }
     
     header nav h2 {
@@ -102,7 +113,7 @@ footer span {
 
 @media screen and (max-width: 768px) {
     header h1 {
-        font-size: 4vw;
+        font-size: 8vw;
     }
     
     header nav h2 {

@@ -9,7 +9,7 @@ function getImageUrl(imgElement) {
         index = oldUrl.indexOf('/gallery')
     }
 
-    return oldUrl.substring(index);
+    return './' + oldUrl.substring(index);
 }
 
 $(document).ready(function() {
