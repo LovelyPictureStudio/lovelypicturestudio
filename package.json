@@ -12,9 +12,10 @@
     , "clean" : "rm -fr dist/* && mkdir -p dist/js && mkdir -p dist/images && mkdir -p dist/gallery && mkdir -p dist/css"
     , "html" : "cp *.html dist/"
     , "js" : "cp js/*.js dist/js"
-    , "pics" : "cp images/*.png dist/images && cp images/*.jpg dist/images && cp gallery/*.jpg dist/gallery"
+    , "pics" : "cd images && cp *.png ../dist/images && cp *.jpg ../dist/images && cp *.svg ../dist/images && cd .. && cp gallery/*.jpg dist/gallery"
     , "css" : "cp css/*.css dist/css"
-    , "build" : "npm run clean && npm run html && npm run js && npm run pics && npm run css"
+    , "font" : "cp css/*.ttf dist/css"
+    , "build" : "echo 'start' && npm run clean && npm run html && npm run js && npm run pics && npm run css && npm run font && echo 'done'"
     , "pack" : "rm -fr lovelypicturestudio.zip && cd dist && zip -r ../lovelypicturestudio.zip *"
   }
 }

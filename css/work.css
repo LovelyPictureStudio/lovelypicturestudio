@@ -189,9 +189,17 @@ section .gallery-show .arrow-right {
     section .work div {
         margin-bottom: 20px;
     }
-    
-    section .work .gallery-mobile-vertical {
-        height: 1400px !important;
+}
+
+@media screen and (max-width: 600px) {
+    section .work div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 200px;        
+    }
+
+    section .work div.gallery-mobile-vertical {
+        height: 400px;        
     }
 }
 

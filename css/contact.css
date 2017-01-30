@@ -24,12 +24,20 @@ section .contact-container .left-container h2 {
     font-size: 20px;
 }
 
+section .contact-container .left-container h2 .email {
+    font-size: 15px;
+}
+
 section .contact-container .left-container h2 > b {
-    font-size: 15px;   
+    font-size: 30px;   
 }
 
 section .contact-container .center-container {
     margin-right: 30px;
+}
+
+.svg-icon {
+    width: 20px;
 }
 
 label {
@@ -50,9 +58,9 @@ label {
 .btn-lovely {
     width: 100%;
     font-size: 12px;
-    /*font-weight: bold;*/
     background-color: black;
     color: white;
+    font-family: 'courier';
 }
 
 .btn-lovely:hover {
@@ -121,4 +129,9 @@ label {
     .form-control {
         font-size: 3.5vw;
     }
+
+    section .contact-container .left-container h2 .email {
+        font-size: 12px;
+    }
+}
 }

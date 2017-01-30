@@ -1,20 +1,17 @@
 @font-face {
-    font-family: 'Moon Flower Bold';
-    src: url('Moon Flower Bold.eot'); /* IE9 */
-    src: url('Moon Flower Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('Moon Flower Bold.ttf') format('truetype');
+    font-family: MoonFlower;
+    font-weight: bold;
+    src: local('MoonFlower'), url('moonflowerbold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'MoonFlower';
-    src: url('MoonFlower.eot'); /* IE9 */
-    src: url('MoonFlower.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('MoonFlower.ttf') format('truetype');
+    font-family: MoonFlower;
+    src: url('../css/moonflower.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'SkyLine';
     src: url('SmallTownSkyline.eot'); /* IE9 */
-    src: url('SmallTownSkyline.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('SmallTownSkyline.ttf') format('truetype');
+    src: url('SmallTownSkyline.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+    url('../css/SmallTownSkyline.ttf') format('truetype');
 }
