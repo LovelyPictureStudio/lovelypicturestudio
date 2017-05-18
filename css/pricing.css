@@ -27,6 +27,10 @@ div.price_card .disclaimer {
 	font-size: 12px;
 }
 
+div.disclaimer {
+	font-family: courier;
+}	
+
 div.pricing_container {
 	background-color: #fff1d8;
 }
