@@ -25,11 +25,11 @@ section .contact-container .left-container h2 {
 }
 
 section .contact-container .left-container h2 .email {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 section .contact-container .left-container h2 > b {
-    font-size: 30px;   
+    font-size: 20px;   
 }
 
 section .contact-container .center-container {
